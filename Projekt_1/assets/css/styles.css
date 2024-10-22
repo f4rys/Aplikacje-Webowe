@@ -249,3 +249,9 @@ main hr {
     margin-right: auto;
     border-radius: 8px;
 }
+
+#clock {
+    display: inline-block;
+    width: 60px;
+    text-align: start;
+}
