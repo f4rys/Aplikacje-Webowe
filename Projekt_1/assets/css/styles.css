@@ -384,3 +384,8 @@ footer {
     z-index: 9999;
     display: none;
 }
+
+#error-messages{
+    color: red;
+    margin-top: 10px;
+}
