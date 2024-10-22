@@ -1,5 +1,7 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* Global Styles */
 html, body {
     margin: 0;
     padding: 0;
@@ -7,8 +9,10 @@ html, body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    background-color: #DAD7CD;
 }
 
+/* Typography */
 main h1 {
     font-size: 2.5rem;
 }
@@ -17,12 +21,77 @@ main h2 {
     margin-top: 80px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #DAD7CD;
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+form select option {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+
+form input[type="text"]::placeholder,
+form textarea::placeholder {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+/* Layout */
+main {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    text-align: left;
+    margin: auto auto 100px auto;
+    max-width: 800px;
+}
+
+main hr {
+    border: 0;
+    height: 1px;
+    background: #000000;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+}
+
+.divider {
+    max-width: 500px;
+}
+
+.section-image {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+.main-image {
+    width: 1000px;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Navigation */
 nav {
     display: flex;
     top: 0;
@@ -81,11 +150,7 @@ nav {
     background-color: #3A5A40;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
-}
-
+/* Forms */
 form {
     display: flex;
     flex-direction: column;
@@ -96,11 +161,6 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    margin-top: 15px;
-    font-weight: 700;
 }
 
 form textarea {
@@ -117,17 +177,6 @@ form textarea {
     border-radius: 4px;
     font-size: 1em;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 600;
-}
-
-form select option {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-}
-
-form input[type="text"]::placeholder,
-form textarea::placeholder {
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
 }
@@ -161,6 +210,7 @@ form input[type="submit"]:active {
     background-color: #1F3221;
 }
 
+/* Components */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -186,10 +236,6 @@ footer {
     bottom: 0;
 }
 
-.material-symbols-outlined {
-    margin-right: 8px;
-}
-
 .footer-content p {
     display: flex;
     align-items: center;
@@ -197,59 +243,11 @@ footer {
     margin: 5px 0 5px 0;
 }
 
-.main-image {
-    width: 1000px;
-    height: 200px;
-    margin: 20px 0;
-    border-radius: 10px;
+.material-symbols-outlined {
+    margin-right: 8px;
 }
 
-main {
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.content {
-    text-align: left;
-    margin: auto auto 100px auto;
-    max-width: 800px;
-}
-
-.content h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-main hr {
-    border: 0;
-    height: 1px;
-    background: #000000;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-}
-
-.divider{
-    max-width: 500px;
-}
-
-.section-image {
-    width: 700px;
-    height: 100px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-}
-
+/* Utilities */
 #clock {
     display: inline-block;
     width: 60px;
