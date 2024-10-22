@@ -6,10 +6,36 @@
     <title>Numizmatyka - Galeria</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-</head>
-<body>
+    <style>
+        #loading-placeholder {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border: 5px solid #3A5A40;
+            border-top: 5px solid #DAD7CD;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 9999;
+        }
 
-    <header>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="loading">
+
+    <div id="loading-placeholder"></div>
+
+    <header class="hidden">
         <nav>
             <div class="navbar-left">
                 <span class="material-symbols-outlined">paid</span>
@@ -23,7 +49,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="hidden">
         <h1>Galeria</h1>
         <section class="gallery">
             <img src="image1.jpg" alt="Moneta 1">
@@ -36,7 +62,7 @@
         </video>
     </main>
 
-    <footer>
+    <footer class="hidden">
         <div class="footer-content">
             <p><span class="material-symbols-outlined">schedule</span><span id="clock"></span></p>
             <p><span class="material-symbols-outlined">email</span>wbartoszek@student.agh.edu.pl</p>
@@ -45,5 +71,6 @@
     </footer>
 
     <script src="assets/js/clock.js"></script>
+    <script src="assets/js/loader.js"></script>
 </body>
 </html>
