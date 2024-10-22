@@ -95,14 +95,17 @@ main hr {
 }
 
 /* Navigation */
-nav {
-    display: flex;
+header{
     top: 0;
     position: sticky;
+}
+
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(#456644,#3A5A40);
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     animation: slideDown 0.5s ease-out;
 }
 
