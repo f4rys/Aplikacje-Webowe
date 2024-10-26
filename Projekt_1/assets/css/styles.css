@@ -95,9 +95,10 @@ main hr {
 }
 
 /* Navigation */
-header{
+header {
     top: 0;
     position: sticky;
+    z-index: 1000;
 }
 
 nav {
@@ -237,6 +238,52 @@ form input[type="submit"]:active {
     transform: scale(1.05);
 }
 
+.centered-video {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item label {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+
 /* Footer */
 .footer-content {
     display: flex;
@@ -272,6 +319,11 @@ footer {
     text-align: start;
 }
 
+#error-messages {
+    color: red;
+    margin-top: 10px;
+}
+
 /* Animations */
 @keyframes slideDown {
     from {
@@ -304,53 +356,7 @@ footer {
     }
 }
 
-.centered-video {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.gallery-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.gallery-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.gallery-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.gallery-item {
-    width: calc(20% - 10px);
-    position: relative;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.gallery-item label {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 2px 5px;
-    font-size: 0.8em;
-    border-radius: 3px;
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
     .gallery-item {
         width: calc(33.33% - 10px);
@@ -386,9 +392,4 @@ footer {
     background: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     display: none;
-}
-
-#error-messages{
-    color: red;
-    margin-top: 10px;
 }
