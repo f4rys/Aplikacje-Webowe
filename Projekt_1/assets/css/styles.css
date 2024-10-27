@@ -19,22 +19,22 @@ main h1 {
 }
 
 main h2 {
-    margin-top: 60px;
+    margin-top: 3rem;
 }
 
 .content h2 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .content p {
     font-size: 1.2em;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 form label {
-    margin-top: 15px;
+    margin-top: 0.9rem;
     font-weight: 700;
 }
 
@@ -51,36 +51,35 @@ form textarea::placeholder {
 
 /* Layout */
 main {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+    padding: 1.2rem;
     text-align: center;
     animation: fadeIn 1s ease-out;
 }
 
 .content {
     text-align: left;
-    margin: auto auto 100px auto;
-    max-width: 800px;
+    margin: auto auto 6.25rem auto;
+    max-width: 50rem;
 }
 
 main hr {
     border: 0;
     height: 1px;
     background: #000000;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 700px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 44rem;
     margin-left: auto;
 }
 
 .divider {
-    max-width: 500px;
+    max-width: 31rem;
 }
 
 .section-image {
-    width: 700px;
-    height: 100px;
+    width: 90%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -88,9 +87,9 @@ main hr {
 }
 
 .main-image {
-    width: 1000px;
-    height: 200px;
-    margin: 20px 0;
+    width: 80%;
+    height: auto;
+    margin: 1.2rem 0;
     border-radius: 10px;
 }
 
@@ -106,12 +105,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(#456644,#3A5A40);
-    padding: 0 20px;
+    padding: 0 1.2rem;
     animation: slideDown 0.5s ease-out;
 }
 
 .navbar-left {
-    margin-left: 10px;
+    margin-left: 0.6rem;
     display: flex;
     align-items: center;
 }
@@ -124,7 +123,7 @@ nav {
 }
 
 .navbar-left .material-symbols-outlined {
-    margin-right: 8px;
+    margin-right: 0.5rem;
     color: white;
 }
 
@@ -148,7 +147,7 @@ nav {
 }
 
 .navbar-right li a {
-    padding: 14px 20px;
+    padding: 0.9rem 1.2rem;
     color: white;
     text-decoration: none;
     display: flex;
@@ -166,10 +165,10 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
-    margin: 0 auto 100px auto;
+    max-width: 31rem;
+    margin: 0 auto 6.5rem auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 1.2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -182,8 +181,8 @@ form input[type="text"],
 form select,
 form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
@@ -201,8 +200,8 @@ form textarea:focus {
 }
 
 form input[type="submit"] {
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin-top: 1.2rem;
+    padding: 0.6rem 1.2rem;
     background-color: #3A5A40;
     color: white;
     border: none;
@@ -230,7 +229,7 @@ form input[type="submit"]:active {
 
 .gallery img {
     width: 30%;
-    margin: 1.66%;
+    margin: 1.5%;
     transition: transform 0.3s ease;
 }
 
@@ -241,26 +240,26 @@ form input[type="submit"]:active {
 .centered-video {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 1.2rem 0;
 }
 
 .gallery-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 1.2rem 0;
 }
 
 .gallery-section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 .gallery-items {
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 0.6rem;
 }
 
 .gallery-item {
@@ -275,11 +274,11 @@ form input[type="submit"]:active {
 
 .gallery-item label {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 0.3rem; 
+    left: 0.3rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 2px 5px;
+    padding: 0.1rem 0.3rem;
     font-size: 0.8em;
     border-radius: 3px;
 }
@@ -289,7 +288,7 @@ form input[type="submit"]:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px 0 5px 0;
+    margin: 0.3rem 0;
 }
 
 footer {
@@ -304,24 +303,24 @@ footer {
 .footer-content p {
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    margin: 5px 0 5px 0;
+    padding: 0 1.2rem;
+    margin: 0.3rem 0;
 }
 
 .material-symbols-outlined {
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
 /* Utilities */
 #clock {
     display: inline-block;
-    width: 60px;
+    width: 3rem;
     text-align: start;
 }
 
 #error-messages {
     color: red;
-    margin-top: 10px;
+    margin-top: 0.6rem
 }
 
 /* Animations */
@@ -359,13 +358,13 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
     .gallery-item {
-        width: calc(33.33% - 10px);
+        width: calc(35% - 0.6rem);
     }
 }
 
 @media (max-width: 480px) {
     .gallery-item {
-        width: calc(50% - 10px);
+        width: calc(50% - 0.6rem);
     }
 }
 
@@ -375,11 +374,11 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 1000px;
+    width: 52vw;
+    height: 52vw;
     z-index: 10000;
-    border: 5px solid #3A5A40;
-    border-radius: 10px;
+    border: 0.25vw solid #3A5A40;
+    border-radius: 0.5vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
