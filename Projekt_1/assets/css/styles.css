@@ -409,20 +409,10 @@ footer {
     padding: 0;
 }
 
-@media (max-width: 480px) {
-    .gallery-item {
-        width: calc(50% - 0.6rem);
-    }
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
     nav{
         padding: 2vw;
-    }
-
-    .gallery-item {
-        width: calc(35% - 0.6rem);
     }
 
     .navbar-right {
@@ -453,5 +443,9 @@ footer {
         margin: 0;
         text-align: center;
         font-size: 3vw;
+    }
+
+    .gallery-item label {
+        font-size: 2.5vw;
     }
 }
