@@ -244,16 +244,6 @@ form input[type="submit"]:active {
     flex-wrap: wrap;
 }
 
-.gallery img {
-    width: 30%;
-    margin: 1.5%;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
 .centered-video {
     display: flex;
     justify-content: center;
@@ -284,7 +274,7 @@ form input[type="submit"]:active {
 }
 
 .gallery-item img {
-    width: 100%;
+    max-width: 20vw;
     height: auto;
     display: block;
 }
@@ -382,8 +372,6 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 52vw;
-    height: 52vw;
     z-index: 10000;
     border: 0.25vw solid #3A5A40;
     border-radius: 0.5vw;
