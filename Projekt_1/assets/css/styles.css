@@ -98,19 +98,19 @@ header {
     top: 0;
     position: sticky;
     z-index: 1000;
+    display: flex;
+    padding: 0 1vw;
+    background-image: linear-gradient(#456644,#3A5A40);
+    animation: slideDown 0.5s ease-out;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(#456644,#3A5A40);
-    padding: 0 1vw;
-    animation: slideDown 0.5s ease-out;
+    width: 100%;
 }
 
 .navbar-left {
-    margin-left: 0.6rem;
     display: flex;
     align-items: center;
 }
@@ -135,9 +135,9 @@ nav {
 }
 
 .navbar-right {
+    display: flex;
     list-style-type: none;
     padding: 0;
-    display: flex;
     margin: 0;
 }
 
@@ -385,7 +385,7 @@ footer {
 .hamburger-menu {
     display: none;
     cursor: pointer;
-    margin-right: 0!;
+    margin-right: 0;
 }
 
 .hamburger-menu .material-symbols-outlined {
@@ -425,10 +425,22 @@ footer {
 
     .mobile-menu {
         display: flex;
+        flex-direction: column;
+        background-color: #3A5A40;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        z-index: 1001;
     }
 
     .mobile-menu.hidden {
         display: none;
+    }
+
+    .mobile-menu li {
+        text-align: center;
+        padding: 0;
     }
 
     .footer-content {
