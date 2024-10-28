@@ -274,7 +274,7 @@ form input[type="submit"]:active {
 }
 
 .gallery-item img {
-    max-width: 20vw;
+    width: 20vw;
     height: auto;
     display: block;
 }
@@ -376,6 +376,7 @@ footer {
     border: 0.25vw solid #3A5A40;
     border-radius: 0.5vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90vh!important;
 }
 
 .overlay {
@@ -384,7 +385,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 9999;
     display: none;
 }
