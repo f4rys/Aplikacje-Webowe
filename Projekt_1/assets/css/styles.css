@@ -255,6 +255,7 @@ form input[type="submit"]:active {
     flex-direction: column;
     align-items: center;
     margin: 1.2rem 0;
+    width: 100%;
 }
 
 .gallery-section h2 {
@@ -262,32 +263,39 @@ form input[type="submit"]:active {
     margin-bottom: 1.2rem;
 }
 
+/* Gallery Items */
 .gallery-items {
     display: grid;
     justify-content: center;
-    grid-template-columns: auto auto auto auto;
     gap: 0.6rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(calc(15rem + 5vw), 1fr));
 }
 
 .gallery-item {
+    justify-self: center;
     position: relative;
+    display: block;
 }
 
 .gallery-item img {
-    width: 20vw;
+    width: calc(15rem + 5vw);
     height: auto;
     display: block;
+    border: 2px solid #3A5A40;
+    border-radius: 5px;
 }
 
 .gallery-item label {
     position: absolute;
-    bottom: 0.3rem; 
-    left: 0.3rem;
+    bottom: 0.2rem;
+    left: 0.2rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 0.1rem 0.3rem;
     font-size: 0.8em;
     border-radius: 3px;
+    text-align: center;
 }
 
 /* Footer */
