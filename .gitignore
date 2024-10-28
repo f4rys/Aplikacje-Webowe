@@ -1,2 +1,6 @@
 Projekt_1/project1_requirements.pdf
 Projekt_1/project1_requirements.txt
+
+.firebaserc
+.firebase/
+firebase.json
