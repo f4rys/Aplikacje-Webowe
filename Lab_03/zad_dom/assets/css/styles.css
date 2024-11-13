@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameContainer {
+    position: relative;
+    width: 854px;
+    height: 480px;
+    background: black;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0;
+    background-image: url("../img/board-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.score, .lives {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.score {
+    top: 20px;
+    right: 20px;
+}
+
+.lives {
+    top: 20px;
+    left: 20px;
+}
