@@ -4,3 +4,5 @@ Projekt_1/project1_requirements.txt
 .firebaserc
 .firebase/
 firebase.json
+
+node_modules/
