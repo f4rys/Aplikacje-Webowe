@@ -1,0 +1,129 @@
+/* App.css */
+#root {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  margin: 0;
+  padding: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.koszyk {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.produkt {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.licznik {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.licznik button {
+  margin-top: 10px;
+  padding: 10px 5px;
+  font-size: 16px;
+}
+
+.formularz {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formularz input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.haslo, .logowanie {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.haslo input, .logowanie input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.komentarz {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.komentarz-header {
+  font-weight: bold;
+}
+
+.komentarz-body {
+  margin: 10px 0;
+}
+
+.komentarz-footer {
+  display: flex;
+  align-items: center;
+}
+
+.komentarz-footer button {
+  margin-right: 10px;
+}
+
+.komentarze{
+  margin-top: 3800px;
+  flex-direction: row;
+}
